@@ -10,3 +10,4 @@ lst.sort(key = len)
 
 for i in lst:
     print(i)
+    
