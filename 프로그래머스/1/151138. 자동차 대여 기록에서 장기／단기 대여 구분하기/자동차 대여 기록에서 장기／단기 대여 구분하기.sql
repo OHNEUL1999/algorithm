@@ -1,8 +1,6 @@
 -- 코드를 입력하세요
 SELECT 
-    HISTORY_ID, 
-    CAR_ID, 
-    DATE_FORMAT(START_DATE, '%Y-%m-%d') AS START_DATE, 
+    HISTORY_ID, CAR_ID, DATE_FORMAT(START_DATE, '%Y-%m-%d') AS START_DATE, 
     DATE_FORMAT(END_DATE, '%Y-%m-%d') AS END_DATE, 
     CASE 
         WHEN DATEDIFF(END_DATE, START_DATE) >= 29 THEN '장기 대여' 
